@@ -3,7 +3,6 @@ Template.lenderDashboard.events({
       const loanId = event.target.dataset.loanId;
       const amount = parseFloat(event.target.dataset.amount);
   
-      // Validate and confirm payment
       Payments.insert({
         loanId: loanId,
         amount: amount,
