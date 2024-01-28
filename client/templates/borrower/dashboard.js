@@ -3,9 +3,7 @@ Template.borrowerDashboard.events({
       event.preventDefault();
       const amount = parseFloat(event.target.amount.value);
   
-      // Validate amount
-  
-      // Create loan request
+
       Loans.insert({
         userId: Meteor.userId(),
         amount: amount,
