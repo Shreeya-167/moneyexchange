@@ -8,7 +8,6 @@ UsersSchema = new SimpleSchema({
       type: [String],
       allowedValues: ['admin', 'borrower', 'lender']
     },
-    // Add other user fields as needed
   });
   
   LoansSchema = new SimpleSchema({
@@ -22,7 +21,7 @@ UsersSchema = new SimpleSchema({
       type: String,
       allowedValues: ['pending', 'approved', 'rejected', 'paid']
     },
-    // Add other loan fields as needed
+   
   });
   
   PaymentsSchema = new SimpleSchema({
@@ -32,7 +31,7 @@ UsersSchema = new SimpleSchema({
     amount: {
       type: Number,
     },
-    // Add other payment fields as needed
+    
   });
   
   Users.attachSchema(UsersSchema);
